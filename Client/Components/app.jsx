@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FoodTruckList from './foodTruckList';
 
 export default class App extends Component {
 	constructor(props) {
@@ -8,7 +9,10 @@ export default class App extends Component {
 
 	render() {
 		return (
-			<h1>Test test test</h1>
+      <div>
+			   <h1>Test test test</h1>
+         <FoodTruckList />
+      </div>
 		);
 	};
 };

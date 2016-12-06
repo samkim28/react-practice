@@ -17,6 +17,8 @@
     "nodemon": "^1.11.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0",
     "request": "^2.79.0",
     "webpack": "^1.13.3"
   },
