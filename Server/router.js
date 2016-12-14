@@ -6,8 +6,9 @@ const router = express.Router();
 router.get('/truckdata', (req, res) => {
 
     const url = 'https://data.sfgov.org/resource/6a9r-agq8.json';
+    console.log('req query ftype: ', req.query.facilityType);
     const qs = {
-        FacilityType: 'Push Cart'
+        FacilityType: req.query.FacilityType
     }
 
     request.get({url, qs}, (error, response, body) => {
@@ -17,7 +18,7 @@ router.get('/truckdata', (req, res) => {
         } else {
             res.status(200).json(body)
         }
-    })
+    });
 });
 
 
